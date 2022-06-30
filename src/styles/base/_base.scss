@@ -1,0 +1,34 @@
+// Partial starts with underscore
+html {
+    font-size: 62.5%
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+a:visited {
+    color: black;
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.is-active {
+    font-weight: bold;
+    cursor: default;
+}
+
+.is-active:focus {
+    color: black;
+}
+
