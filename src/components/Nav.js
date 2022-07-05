@@ -9,7 +9,7 @@ const Nav = () => {
             <NavLink to="/" 
                      className={({isActive}) => isActive ? activeClassName : undefined }
             >
-                Home
+                Dashboard
             </NavLink>
             <NavLink to="/create" 
                      className={({isActive}) => isActive ? activeClassName : undefined }

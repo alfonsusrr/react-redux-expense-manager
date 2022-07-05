@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render ExpenseList with empty message 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Expense List
+    </h1>
+    <p>
+      No expenses
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Should render ExpenseList with expenses 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Expense List
+    </h1>
+    <div>
+      <h3>
+        <a
+          href="/edit/2"
+        >
+          Household Bill
+        </a>
+      </h3>
+      <p>
+        $ 322 - Jul 21 2022
+      </p>
+    </div>
+    <div>
+      <h3>
+        <a
+          href="/edit/4"
+        >
+          Credit Card
+        </a>
+      </h3>
+      <p>
+        $ 3123 - Jul 19 2022
+      </p>
+    </div>
+    <div>
+      <h3>
+        <a
+          href="/edit/1"
+        >
+          Rent
+        </a>
+      </h3>
+      <p>
+        $ 200 - Jul 15 2022
+      </p>
+    </div>
+    <div>
+      <h3>
+        <a
+          href="/edit/3"
+        >
+          Internet Bill
+        </a>
+      </h3>
+      <p>
+        $ 1121 - Jul 13 2022
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;

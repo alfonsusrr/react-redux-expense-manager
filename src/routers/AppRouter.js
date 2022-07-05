@@ -10,7 +10,10 @@ const AppRouter = () => (
             <Route path="/">
                 <Route index element={<Pages.ExpenseDashboardPage/>} />
                 <Route path="create" element={<Pages.AddExpensePage/>}/>
-                <Route path="edit/:id" element={<Pages.EditExpensePage/>}/>
+                <Route path="edit">
+                    <Route index element={<Pages.EditExpensePage/>}/>
+                    <Route path=":id" element={<Pages.EditExpensePage/>}/>
+                </Route>
                 <Route path="help" element={<Pages.HelpPage/>}/>
                 <Route path="*" element={<Pages.NotFoundPage/>}/>
             </Route>
