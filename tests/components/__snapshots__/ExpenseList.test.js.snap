@@ -28,7 +28,7 @@ exports[`Should render ExpenseList with expenses 1`] = `
         </a>
       </h3>
       <p>
-        $ 322 - Jul 21 2022
+        $ 322 - July 21st 2022
       </p>
     </div>
     <div>
@@ -40,7 +40,7 @@ exports[`Should render ExpenseList with expenses 1`] = `
         </a>
       </h3>
       <p>
-        $ 3123 - Jul 19 2022
+        $ 3123 - July 19th 2022
       </p>
     </div>
     <div>
@@ -52,7 +52,7 @@ exports[`Should render ExpenseList with expenses 1`] = `
         </a>
       </h3>
       <p>
-        $ 200 - Jul 15 2022
+        $ 200 - July 15th 2022
       </p>
     </div>
     <div>
@@ -64,7 +64,7 @@ exports[`Should render ExpenseList with expenses 1`] = `
         </a>
       </h3>
       <p>
-        $ 1121 - Jul 13 2022
+        $ 1121 - July 13th 2022
       </p>
     </div>
   </div>
