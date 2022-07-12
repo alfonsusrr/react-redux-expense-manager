@@ -1,7 +1,10 @@
 // entry -> output
 const path = require('path')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const HtmlWebpackPlugin = require("html-webpack-plugin")
+
 module.exports = {
-    entry: './src/app.js',
+    entry: path.join(__dirname, './src/app.js'),
     output: {
         path: path.join(__dirname, './public/'),
         filename: 'bundle.js'
@@ -18,22 +21,23 @@ module.exports = {
             exclude: /node_modules/
         }, {
             use: [
-                'style-loader',
+                MiniCssExtractPlugin.loader,
                 'css-loader',
                 'sass-loader'
             ],
             test: /\.s?css$/,
         }]
     },
-    mode:'development',
-    devtool: 'eval-cheap-module-source-map',
-    devServer: {
-        static: {
-            directory: path.join(__dirname, './public/'), // bundle.js is not made to make process faster using devServer
-        },
-        historyApiFallback: true,
-    },
-
+    plugins: [
+                new MiniCssExtractPlugin({
+                    filename: "css/styles.css",
+                }),
+                new HtmlWebpackPlugin({
+                    title: 'Boilerplate',
+                    filename: 'index.html',
+                    template: path.join(__dirname, "public/index.html"),
+                })
+            ]
 }
 
 // Loader : babel-core, babel-loader
