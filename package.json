@@ -7,7 +7,9 @@
     "test": "jest",
     "serve": "live-server public/",
     "build": "webpack --config webpack.prod.js",
-    "dev-server": "webpack serve --open --config webpack.dev.js"
+    "dev-server": "webpack serve --open --config webpack.dev.js",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
