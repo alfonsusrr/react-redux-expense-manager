@@ -35,7 +35,7 @@ module.exports = {
                 new HtmlWebpackPlugin({
                     title: 'Boilerplate',
                     filename: 'index.html',
-                    template: path.join(__dirname, "public/index.html"),
+                    template: path.join(__dirname, "public/app.html"),
                 })
             ]
 }
